@@ -6,9 +6,7 @@
 
 # WPF MVVM Framework - Serialize/Deserialize a View's Size and State with LayoutSerializationService and CurrentWindowSerializationBehavior
 
-The [CurrentWindowSerializationBehavior](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.CurrentWindowSerializationBehavior) allows you to serialize/deserialize settings (size and state) of the associated view (or window).
-
-The [CurrentWindowSerializationBehavior](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.CurrentWindowSerializationBehavior) uses the [LayoutSerializationService](https://docs.devexpress.com/WPF/114419/mvvm-framework/services/predefined-set/layoutserializationservice) to serialize/deserialize a view's settings. 
+The [CurrentWindowSerializationBehavior](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.CurrentWindowSerializationBehavior) allows you to serialize/deserialize settings (size and state) of the associated view (or window). The behavior uses the [LayoutSerializationService](https://docs.devexpress.com/WPF/114419/mvvm-framework/services/predefined-set/layoutserializationservice) to serialize/deserialize a view's settings. 
 
 To save/restore view settings, assign the **CurrentWindowSerializationBehavior** to the view and invoke the [Serialize](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.LayoutSerializationService.Serialize)/[Deserialize](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.LayoutSerializationService.Deserialize(System.String)) methods in the [Initialized](https://docs.devexpress.com/WPF/System.Windows.FrameworkElement.Initialized) event hander.
 
