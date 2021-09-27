@@ -8,11 +8,11 @@
 
 The [CurrentWindowSerializationBehavior](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.CurrentWindowSerializationBehavior) allows you to serialize/deserialize settings (size and state) of the associated view (or window). The behavior uses the [LayoutSerializationService](https://docs.devexpress.com/WPF/114419/mvvm-framework/services/predefined-set/layoutserializationservice) to serialize/deserialize a view's settings. 
 
-To save/restore view settings, assign the **CurrentWindowSerializationBehavior** to the view and invoke the [Serialize](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.LayoutSerializationService.Serialize)/[Deserialize](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.LayoutSerializationService.Deserialize(System.String)) methods in the [Initialized](https://docs.devexpress.com/WPF/System.Windows.FrameworkElement.Initialized) event hander.
+To save/restore view settings, assign the **CurrentWindowSerializationBehavior** to the view and invoke the [Serialize](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.LayoutSerializationService.Serialize)/[Deserialize](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.LayoutSerializationService.Deserialize(System.String)) methods in the [Initialized](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.initialized) event hander.
 
 You should define the **CurrentWindowSerializationBehavior** at the same hierarchical level with the [LayoutSerializationService](https://docs.devexpress.com/WPF/114419/mvvm-framework/services/predefined-set/layoutserializationservice) or lower.
 
-To **deserialize** view settings on the application startup, use the [Initialized](https://docs.devexpress.com/WPF/System.Windows.FrameworkElement.Initialized) event.
+To **deserialize** view settings on the application startup, use the [Initialized](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.initialized) event.
 
 <!-- default file list -->
 ## Files to Look At
