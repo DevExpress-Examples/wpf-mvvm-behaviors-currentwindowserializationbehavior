@@ -3,8 +3,21 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T273165)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
+
+# WPF MVVM Framework - Serialize/Deserialize a View's Size and State with LayoutSerializationService and CurrentWindowSerializationBehavior
+
+The [CurrentWindowSerializationBehavior](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.CurrentWindowSerializationBehavior) allows you to serialize/deserialize settings (size and state) of the associated view (or window).
+
+The [CurrentWindowSerializationBehavior](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.CurrentWindowSerializationBehavior) uses the [LayoutSerializationService](https://docs.devexpress.com/WPF/114419/mvvm-framework/services/predefined-set/layoutserializationservice) to serialize/deserialize a view's settings. 
+
+To save/restore view settings, assign the **CurrentWindowSerializationBehavior** to the view and invoke the [Serialize](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.LayoutSerializationService.Serialize)/[Deserialize](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.LayoutSerializationService.Deserialize(System.String)) methods in the [Initialized](https://docs.devexpress.com/WPF/System.Windows.FrameworkElement.Initialized) event hander.
+
+You should define the **CurrentWindowSerializationBehavior** at the same hierarchical level with the [LayoutSerializationService](https://docs.devexpress.com/WPF/114419/mvvm-framework/services/predefined-set/layoutserializationservice) or lower.
+
+To **deserialize** view settings on the application startup, use the [Initialized](https://docs.devexpress.com/WPF/System.Windows.FrameworkElement.Initialized) event.
+
 <!-- default file list -->
-*Files to look at*:
+## Files to Look At
 
 * [ViewModelState.cs](./CS/DocumentManagerSerialization/Common/ViewModelState.cs) (VB: [ViewModelState.vb](./VB/DocumentManagerSerialization/Common/ViewModelState.vb))
 * [DocumentViewModel.cs](./CS/DocumentManagerSerialization/ViewModels/DocumentViewModel.cs) (VB: [DocumentViewModel.vb](./VB/DocumentManagerSerialization/ViewModels/DocumentViewModel.vb))
@@ -12,11 +25,8 @@
 * [DocumentView.xaml](./CS/DocumentManagerSerialization/Views/DocumentView.xaml) (VB: [DocumentView.xaml](./VB/DocumentManagerSerialization/Views/DocumentView.xaml))
 * **[MainView.xaml](./CS/DocumentManagerSerialization/Views/MainView.xaml) (VB: [MainView.xaml](./VB/DocumentManagerSerialization/Views/MainView.xaml))**
 <!-- default file list end -->
-# How to: Serialize/deserialize DocumentUIService's documents by using LayoutSerializationService and CurrentWindowSerializationBehavior
 
+## Documentation
 
-This example illustrates how to serialize/deserialize DocumentUIService's documents by using LayoutSerializationService and CurrentWindowSerializationBehavior
-
-<br/>
-
-
+- [CurrentWindowSerializationBehavior](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.CurrentWindowSerializationBehavior)
+- [Behaviors](https://docs.devexpress.com/WPF/17442/mvvm-framework/behaviors)
